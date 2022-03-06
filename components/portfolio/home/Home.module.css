@@ -1,0 +1,62 @@
+.home {
+  height: 110vh;
+  padding: 0 !important;
+  transition: all ease 0.4s;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  background-color: var(--color-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.dark {
+  background-color: var(--color-dark);
+  transition: all ease 0.4s;
+}
+
+.p1,
+.p2,
+.p3 {
+  z-index: -1;
+}
+
+/* .p1 {
+  height: 12rem;
+  width: 12rem;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  top: 8rem;
+  left: 4rem;
+  position: absolute;
+  background-color: transparent;
+  background-image: radial-gradient(var(--color-1) 15%, transparent 15%),
+    radial-gradient(var(--color-1) 15%, transparent 15%);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+.p2 {
+  height: 12rem;
+  width: 12rem;
+  top: 20rem;
+  right: 4rem;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotateZ(-45deg);
+  position: absolute;
+  background-color: transparent;
+  background-image: radial-gradient(var(--color-4) 15%, transparent 15%),
+    radial-gradient(var(--color-4) 15%, transparent 15%);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+.p3 {
+  height: 12rem;
+  width: 12rem;
+  bottom: 4rem;
+  left: 6rem;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotateZ(70deg);
+  position: absolute;
+  background-color: transparent;
+  background-image: radial-gradient(var(--color-dark-3) 15%, transparent 15%),
+    radial-gradient(var(--color-dark-3) 15%, transparent 15%);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+} */

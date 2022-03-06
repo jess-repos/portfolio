@@ -1,9 +1,38 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --color-light: rgb(248, 248, 248);
+  --color-light-2: rgb(224, 224, 224);
+  --color-dark: rgb(24, 24, 24);
+  --color-dark-2: rgb(36, 36, 36);
+  --color-dark-3: rgb(48, 48, 48);
+  --color-dark-4: rgb(96, 96, 96);
+  --color-dark-5: rgb(120, 120, 120);
+  --color-light-09: rgba(248, 248, 248, 0.9);
+  --color-dark-09: rgba(24, 24, 24, 0.9);
+  --color-light-075: rgba(255, 255, 255, 0.75);
+  --color-dark-075: rgba(0, 0, 0, 0.75);
+  --color-highlight-09: rgba(177, 237, 232, 0.75);
+  --color-1: #340068;
+  --color-2: #ff6978;
+  --color-3: #b1ede8;
+  --color-4: #6d435a;
+  --color-5: #fffcf9;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -11,6 +40,11 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+section {
+  padding: 8rem 1rem;
+}
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 8rem 0.25rem;
+  }
 }

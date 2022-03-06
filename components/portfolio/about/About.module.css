@@ -1,0 +1,10 @@
+.about {
+  min-height: 100vh;
+}
+.title {
+  text-shadow: 2px -2px 0 var(--color-3);
+}
+.dark {
+  color: var(--color-3);
+  text-shadow: 2px -2px 0 var(--color-dark);
+}

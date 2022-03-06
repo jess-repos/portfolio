@@ -1,0 +1,34 @@
+.sun,
+.moon {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all ease 0.4s;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  width: 6rem;
+}
+.sun {
+  color: var(--color-light);
+}
+.moon {
+  color: var(--color-dark);
+}
+.sun:hover,
+.moon:hover {
+  transform: scale(110%);
+}
+@media only screen and (min-width: 1200px) {
+  .sun {
+    background-color: var(--color-light);
+  }
+  .sun i {
+    color: var(--color-dark);
+  }
+  .moon {
+    background-color: var(--color-dark);
+  }
+  .moon i {
+    color: var(--color-light);
+  }
+}

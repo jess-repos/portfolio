@@ -1,0 +1,31 @@
+.projects {
+  min-height: 100vh;
+}
+
+.title {
+  text-shadow: 2px -2px 0 var(--color-3);
+}
+.dark {
+  color: var(--color-3);
+  text-shadow: 2px -2px 0 var(--color-dark);
+}
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+@media only screen and (max-width: 1200px) {
+  .items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .items {
+    grid-template-columns: 1fr;
+  }
+}

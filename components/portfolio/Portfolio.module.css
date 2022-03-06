@@ -1,0 +1,16 @@
+.dark {
+  transition: all ease 0.4s;
+  background-color: var(--color-dark-3);
+}
+.dark > * {
+  transition: all ease 0.4s;
+  color: var(--color-light);
+}
+.light {
+  transition: all ease 0.4s;
+  background-color: var(--color-light-2);
+}
+.light > * {
+  transition: all ease 0.4s;
+  color: var(--color-dark-3);
+}

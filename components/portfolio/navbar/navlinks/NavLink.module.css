@@ -1,0 +1,64 @@
+.navlink {
+  list-style: none;
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all ease 0.4s;
+}
+.navlink:hover {
+  color: var(--color-light);
+  transform: scale(110%);
+}
+.dark {
+  color: var(--color-light);
+}
+.home:hover {
+  background-color: var(--color-1);
+}
+.about:hover {
+  background-color: var(--color-2);
+}
+.resume {
+  /* font-weight: 700 !important; */
+  color: var(--color-2) !important;
+}
+.resume:hover {
+  background-color: var(--color-3);
+}
+.projects:hover {
+  background-color: var(--color-4);
+}
+.contact:hover {
+  background-color: var(--color-dark-4);
+}
+.active {
+  color: var(--color-light);
+}
+.active.home {
+  background-color: var(--color-1);
+}
+.active.about {
+  background-color: var(--color-2);
+}
+.active.resume {
+  background-color: var(--color-3);
+}
+.active.projects {
+  background-color: var(--color-4);
+}
+.active.contact {
+  background-color: var(--color-dark-4);
+}
+@media only screen and (max-width: 1200px) {
+  .navlink {
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    padding: 2rem;
+    width: 100%;
+  }
+}

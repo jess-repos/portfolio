@@ -1,0 +1,67 @@
+.project {
+  width: auto;
+  height: 24rem;
+  cursor: pointer;
+  position: relative;
+  transition: all ease 0.4s;
+}
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  transition: all ease 0.4s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overlay img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+.overlay h2 {
+  font-size: 1.25rem;
+  padding: 1rem;
+  border: 2px solid transparent;
+}
+.overlay p {
+  padding: 0 1rem;
+}
+
+/* .dark {
+  color: var(--color-dark);
+  background-color: var(--color-light-075);
+} */
+.project:hover .overlay {
+  opacity: 1;
+}
+.cta {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.cta a {
+  /* font-size: 1.5rem; */
+  border: 2px solid transparent;
+  transition: all ease 0.4s;
+}
+.cta a:hover {
+  border-bottom: 2px solid var(--color-light);
+}
+.dark {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+.dark .cta a:hover {
+  border-bottom: 2px solid var(--color-dark);
+}
