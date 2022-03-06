@@ -27,62 +27,6 @@
             "image": "temperature-humidity-analysis.jpg",
             "live": "https://ths-dashboard.netlify.app/",
             "code": "https://github.com"
-        },
-        {
-            "title": "Git Repos Analysis",
-            "description": "Analyzing github repositories to determine which is the most popular programming language.",
-            "image": "git-repos-analysis.jpg",
-            "live": "https://github-repos-analysis.netlify.app/",
-            "code": "https://github.com"
-        },
-        {
-            "title": "Temperature & Humidity Analysis",
-            "description": "Analyzing daily temperature and humidity coming from a sensor.",
-            "image": "temperature-humidity-analysis.jpg",
-            "live": "https://ths-dashboard.netlify.app/",
-            "code": "https://github.com"
-        },
-        {
-            "title": "Git Repos Analysis",
-            "description": "Analyzing github repositories to determine which is the most popular programming language.",
-            "image": "git-repos-analysis.jpg",
-            "live": "https://github-repos-analysis.netlify.app/",
-            "code": "https://github.com"
-        },
-        {
-            "title": "Temperature & Humidity Analysis",
-            "description": "Analyzing daily temperature and humidity coming from a sensor.",
-            "image": "temperature-humidity-analysis.jpg",
-            "live": "https://ths-dashboard.netlify.app/",
-            "code": "https://github.com"
-        },
-        {
-            "title": "Git Repos Analysis",
-            "description": "Analyzing github repositories to determine which is the most popular programming language.",
-            "image": "git-repos-analysis.jpg",
-            "live": "https://github-repos-analysis.netlify.app/",
-            "code": "https://github.com"
-        },
-        {
-            "title": "Temperature & Humidity Analysis",
-            "description": "Analyzing daily temperature and humidity coming from a sensor.",
-            "image": "temperature-humidity-analysis.jpg",
-            "live": "https://ths-dashboard.netlify.app/",
-            "code": "https://github.com"
-        },
-        {
-            "title": "Git Repos Analysis",
-            "description": "Analyzing github repositories to determine which is the most popular programming language.",
-            "image": "git-repos-analysis.jpg",
-            "live": "https://github-repos-analysis.netlify.app/",
-            "code": "https://github.com"
-        },
-        {
-            "title": "Temperature & Humidity Analysis",
-            "description": "Analyzing daily temperature and humidity coming from a sensor.",
-            "image": "temperature-humidity-analysis.jpg",
-            "live": "https://ths-dashboard.netlify.app/",
-            "code": "https://github.com"
         }
     ]
 }
