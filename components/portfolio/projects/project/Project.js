@@ -16,12 +16,16 @@ const Project = ({ project }) => {
           <p>{project.description}</p>
         </div>
         <div className={classes.cta}>
-          <a href={project.live} target='_blank' rel='noreferrer'>
-            <i className='fas fa-laptop'></i> Live
-          </a>
-          <a href={project.code} target='_blank' rel='noreferrer'>
-            <i className='fas fa-code'></i> Code
-          </a>
+          {project.live && (
+            <a href={project.live} target='_blank' rel='noreferrer'>
+              <i className='fas fa-laptop'></i> Live
+            </a>
+          )}
+          {project.code && (
+            <a href={project.code} target='_blank' rel='noreferrer'>
+              <i className='fas fa-code'></i> Code
+            </a>
+          )}
         </div>
       </div>
     </div>

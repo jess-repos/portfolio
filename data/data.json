@@ -5,28 +5,27 @@
             "description": "Analyzing github repositories to determine which is the most popular programming language.",
             "image": "git-repos-analysis.jpg",
             "live": "https://github-repos-analysis.netlify.app/",
-            "code": "https://github.com"
+            "code": "https://github.com/mark-repos/git-repos-analysis"
         },
         {
             "title": "Temperature & Humidity Analysis",
             "description": "Analyzing daily temperature and humidity coming from a sensor.",
             "image": "temperature-humidity-analysis.jpg",
             "live": "https://ths-dashboard.netlify.app/",
-            "code": "https://github.com"
+            "code": "https://github.com/mark-repos/ths-dashboard-client"
         },
         {
-            "title": "Git Repos Analysis",
+            "title": "Git Repos Analysis (R)",
             "description": "Analyzing github repositories to determine which is the most popular programming language.",
-            "image": "git-repos-analysis.jpg",
-            "live": "https://github-repos-analysis.netlify.app/",
-            "code": "https://github.com"
+            "image": "git-repos-analysis-r.jpg",
+            "live": "/data-analysis/git-repos-analysis-r.html"
         },
         {
-            "title": "Temperature & Humidity Analysis",
-            "description": "Analyzing daily temperature and humidity coming from a sensor.",
-            "image": "temperature-humidity-analysis.jpg",
-            "live": "https://ths-dashboard.netlify.app/",
-            "code": "https://github.com"
+            "title": "My Unsplash",
+            "description": "devchallenges.io - Create a simple Unsplash clone using any framework.",
+            "image": "/my-unsplash.jpg",
+            "live": "https://mc-my-unsplash.netlify.app",
+            "code": "https://github.com/mark-repos/my-unsplash"
         }
     ]
 }
