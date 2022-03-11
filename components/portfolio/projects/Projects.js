@@ -51,8 +51,8 @@ const Projects = () => {
           }}
         >
           {featuredProjects.map((project, index) => (
-            <SplideSlide>
-              <Project key={index} project={project} />
+            <SplideSlide key={index}>
+              <Project project={project} />
             </SplideSlide>
           ))}
         </Splide>
