@@ -12,7 +12,8 @@
   --color-dark-09: rgba(24, 24, 24, 0.9);
   --color-light-075: rgba(255, 255, 255, 0.75);
   --color-dark-075: rgba(0, 0, 0, 0.75);
-  --color-highlight-09: rgba(177, 237, 232, 0.75);
+  --color-dark-05: rgba(0, 0, 0, 0.5);
+  --color-light-05: rgba(255, 255, 255, 0.2);
   --color-1: #340068;
   --color-2: #ff6978;
   --color-3: #b1ede8;
