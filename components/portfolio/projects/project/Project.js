@@ -8,11 +8,19 @@ const Project = ({ project }) => {
   return (
     <div className={classes.project}>
       <img src={imgSrc} alt={project.title} />
-
+      <div className={classes.gradient}></div>
+      <h3 className={classes.title}>{project.title}</h3>
       <div className={`${classes.overlay} ${darkMode && classes.dark}`}>
         <div>
           <img src={imgSrc} alt={project.title} />
           <h2>{project.title}</h2>
+          {project.tags && (
+            <div className={classes.tags}>
+              {project.tags.map((item) => (
+                <div className={classes.tag}>{item}</div>
+              ))}
+            </div>
+          )}
           <p>{project.description}</p>
         </div>
         <div className={classes.cta}>

@@ -1,7 +1,6 @@
 .projects {
   /* min-height: 100vh; */
 }
-
 .title {
   text-shadow: 2px -2px 0 var(--color-3);
 }
@@ -13,6 +12,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
+}
+.featured {
+  margin-bottom: 2rem;
+}
+.header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: inherit;
+}
+.header p {
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
 }
 @media only screen and (max-width: 1200px) {
   .items {

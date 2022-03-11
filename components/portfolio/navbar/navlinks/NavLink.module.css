@@ -11,6 +11,7 @@
 }
 .navlink:hover {
   color: var(--color-light);
+  font-weight: 700;
   transform: scale(110%);
 }
 .dark {
@@ -36,6 +37,7 @@
   background-color: var(--color-dark-4);
 }
 .active {
+  font-weight: 700;
   color: var(--color-light);
 }
 .active.home {

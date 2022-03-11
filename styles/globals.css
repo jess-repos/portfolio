@@ -41,10 +41,10 @@ a {
 }
 
 section {
-  padding: 8rem 1rem;
+  padding: 8rem 1rem 0 1rem;
 }
 @media only screen and (max-width: 600px) {
   section {
-    padding: 8rem 0.25rem;
+    padding: 8rem 0.25rem 0 0.25rem;
   }
 }
