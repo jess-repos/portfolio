@@ -16,8 +16,10 @@ const Project = ({ project }) => {
           <h2>{project.title}</h2>
           {project.tags && (
             <div className={classes.tags}>
-              {project.tags.map((item) => (
-                <div className={classes.tag}>{item}</div>
+              {project.tags.map((item, index) => (
+                <div className={classes.tag} key={index}>
+                  {item}
+                </div>
               ))}
             </div>
           )}
