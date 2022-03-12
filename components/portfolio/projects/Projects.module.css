@@ -15,6 +15,7 @@
 }
 .featured {
   margin-bottom: 2rem;
+  cursor: grab;
 }
 .header {
   margin-bottom: 1rem;
@@ -29,6 +30,11 @@
   border: none;
   cursor: pointer;
   text-decoration: underline;
+}
+.swipe {
+  margin-top: 1rem;
+  position: relative;
+  text-align: center;
 }
 @media only screen and (max-width: 1200px) {
   .items {

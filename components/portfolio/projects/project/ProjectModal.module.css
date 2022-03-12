@@ -1,0 +1,116 @@
+.gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-dark-05);
+  animation: fadeIn 0.4s;
+}
+.modal {
+  animation: fadeIn 0.4s;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: clamp(50%, 32rem, 100%);
+  height: max-content;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+.overlay {
+  transition: all ease 0.4s;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--color-dark-075);
+  /* box-shadow: 0 4px 8px var(--color-dark-05); */
+}
+.close {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+.dark .close {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+.overlay img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.overlay h2 {
+  font-size: 1.25rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.tags {
+  padding: 0.25rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tag {
+  font-weight: 400;
+  color: var(--color-dark-5);
+  font-style: italic;
+  border: 1px solid var(--color-dark-5);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+}
+.overlay p {
+  padding: 0 1rem;
+}
+
+/* .dark {
+    color: var(--color-dark);
+    background-color: var(--color-light-075);
+  } */
+.project:hover .overlay {
+  opacity: 1;
+}
+.cta {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.cta a {
+  /* font-size: 1.5rem; */
+  border: 2px solid transparent;
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+.cta a:hover {
+  border-bottom: 2px solid var(--color-dark);
+}
+.dark {
+  border-bottom: 2px solid var(--color-light-075);
+  background-color: var(--color-dark);
+  /* box-shadow: 0 4px 8px var(--color-light-05); */
+  color: var(--color-light);
+}
+.dark .cta a:hover {
+  border-bottom: 2px solid var(--color-light);
+}
+/* .dark .tags .tag{
+    color: var(--color-light-2);
+  } */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

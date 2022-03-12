@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useUI } from '../../../contexts/UIProvider'
+import { createPortal } from 'react-dom'
 
 import NavLinks from './navlinks/NavLinks'
 import Logo from './navui/Logo'
@@ -10,7 +11,17 @@ import classes from './Navbar.module.css'
 
 const Navbar = () => {
   const { darkMode } = useUI()
-  return (
+
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+    return () => setIsMounted(false)
+  }, [])
+
+  if (!isMounted) return null
+
+  return createPortal(
     <div className={`${classes.nav} ${darkMode && classes.dark}`}>
       <Logo />
 
@@ -19,7 +30,8 @@ const Navbar = () => {
         <DayNight />
         <Burger />
       </div>
-    </div>
+    </div>,
+    document.getElementById('nav')
   )
 }
 

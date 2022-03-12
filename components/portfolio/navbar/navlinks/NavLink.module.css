@@ -39,9 +39,8 @@
 .active {
   font-weight: 700;
   color: var(--color-light);
-  /* transform: scale(110%);
-  position: relative;
-  top: 1rem; */
+  transform: scale(110%);
+  /* position: relative; */
 }
 .active.home {
   background-color: var(--color-1);

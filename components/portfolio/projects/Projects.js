@@ -36,6 +36,7 @@ const Projects = () => {
             // type: 'loop',
             perPage: 4,
             pagination: false,
+            arrows: false,
             gap: '1rem',
             breakpoints: {
               1200: {
@@ -56,6 +57,10 @@ const Projects = () => {
             </SplideSlide>
           ))}
         </Splide>
+        <p className={classes.swipe}>
+          <i className='fas fa-arrow-left'></i> &middot; &middot; &middot;{' '}
+          <i className='fas fa-arrow-right'></i>
+        </p>
       </div>
       {isAllShowing && (
         <>

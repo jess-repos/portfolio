@@ -1,11 +1,15 @@
 .project {
   width: auto;
-  height: 24rem;
-  cursor: pointer;
   position: relative;
+  height: 24rem;
   transition: all ease 0.4s;
+  cursor: pointer;
 }
-.project img {
+.preview {
+  height: 100%;
+  position: relative;
+}
+.preview img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -24,77 +28,4 @@
   width: 100%;
   color: var(--color-light);
 }
-.overlay {
-  transition: all ease 0.4s;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-light);
-  /* color: var(--color-light); */
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-bottom: 2px solid var(--color-dark-075);
-  /* box-shadow: 0 4px 8px var(--color-dark-05); */
-}
-.overlay img {
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-}
-.overlay h2 {
-  font-size: 1.25rem;
-  padding: 1rem 1rem 0 1rem;
-}
-.tags {
-  padding: 0.25rem 1rem;
-  display: flex;
-  gap: 0.5rem;
-}
-.tag {
-  font-weight: 400;
-  color: var(--color-dark-5);
-  font-style: italic;
-  border: 1px solid var(--color-dark-5);
-  padding: 0 0.5rem;
-  border-radius: 1rem;
-}
-.overlay p {
-  padding: 0 1rem;
-}
 
-/* .dark {
-  color: var(--color-dark);
-  background-color: var(--color-light-075);
-} */
-.project:hover .overlay {
-  opacity: 1;
-}
-.cta {
-  padding: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-.cta a {
-  /* font-size: 1.5rem; */
-  border: 2px solid transparent;
-  transition: all ease 0.4s;
-}
-.cta a:hover {
-  border-bottom: 2px solid var(--color-dark);
-}
-.dark {
-  border-bottom: 2px solid var(--color-light-075);
-  background-color: var(--color-dark);
-  /* box-shadow: 0 4px 8px var(--color-light-05); */
-  /* color: var(--color-dark); */
-}
-.dark .cta a:hover {
-  border-bottom: 2px solid var(--color-light);
-}
-/* .dark .tags .tag{
-  color: var(--color-light-2);
-} */
