@@ -14,8 +14,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  width: clamp(50%, 32rem, 100%);
-  height: max-content;
+  width: clamp(50%, 32rem, 90%);
+  min-height: max-content;
   max-height: 90vh;
   overflow-y: scroll;
 }

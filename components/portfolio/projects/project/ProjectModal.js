@@ -1,17 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { createPortal } from 'react-dom'
 import { useUI } from '../../../../contexts/UIProvider'
+import useIsMounted from '../../../../hooks/useIsMounted'
 
 import classes from './ProjectModal.module.css'
 
 const ProjectModal = ({ project, onClose, imgSrc }) => {
-  const [isMounted, setIsMounted] = useState(false)
+  const isMounted = useIsMounted()
   const { darkMode } = useUI()
-
-  useEffect(() => {
-    setIsMounted(true)
-    return () => setIsMounted(false)
-  })
 
   if (!isMounted) return null
 

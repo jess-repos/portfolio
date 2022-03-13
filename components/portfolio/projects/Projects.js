@@ -58,8 +58,9 @@ const Projects = () => {
           ))}
         </Splide>
         <p className={classes.swipe}>
-          <i className='fas fa-arrow-left'></i> &middot; &middot; &middot;{' '}
-          <i className='fas fa-arrow-right'></i>
+          &middot; <i className='fas fa-angle-double-left'></i> &middot;
+          &middot; &middot; <i className='fas fa-angle-double-right'></i>{' '}
+          &middot;
         </p>
       </div>
       {isAllShowing && (
