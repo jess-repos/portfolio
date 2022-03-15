@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { useUI } from '../../../../contexts/UIProvider'
+import { useUI } from '../../../contexts/UIProvider'
 
 import classes from './NavLink.module.css'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useUI } from '../../../../contexts/UIProvider'
+import { useUI } from '../../../contexts/UIProvider'
 
 import classes from './DayNight.module.css'
 

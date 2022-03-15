@@ -8,15 +8,22 @@ const Project = ({ project }) => {
 
   return (
     <div className={classes.project}>
-      <div className={classes.preview} onClick={() => setIsModalOpen(true)}>
+      <div
+        className={classes.preview}
+        onClick={() => setIsModalOpen(true)}
+        data-description={project.description}
+      >
         <img src={imgSrc} alt={project.title} />
         <div className={classes.gradient}></div>
         <h3 className={classes.title}>{project.title}</h3>
       </div>
       {isModalOpen && (
-        <ProjectModal project={project} imgSrc={imgSrc} onClose={() => setIsModalOpen(false)} />
+        <ProjectModal
+          project={project}
+          imgSrc={imgSrc}
+          onClose={() => setIsModalOpen(false)}
+        />
       )}
-      
     </div>
   )
 }

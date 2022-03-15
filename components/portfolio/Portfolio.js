@@ -2,7 +2,7 @@ import React from 'react'
 import { useUI } from '../../contexts/UIProvider'
 import Home from './home/Home'
 import About from './about/About'
-import Navbar from './navbar/Navbar'
+import Navbar from '../navbar/Navbar'
 
 import classes from './Portfolio.module.css'
 import Resume from './resume/Resume'
@@ -13,7 +13,7 @@ const Portfolio = () => {
   const { darkMode } = useUI()
   return (
     <main className={darkMode ? classes.dark : classes.light}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       <About />
       <Resume />

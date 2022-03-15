@@ -9,6 +9,7 @@
   font-weight: 700;
   border-bottom: 4px solid var(--color-dark);
   margin-bottom: 4rem;
+  transition: all ease 0.4s;
 }
 .title::before {
   transition: all ease 0.4s;
@@ -30,6 +31,7 @@
   background-color: var(--color-dark);
 }
 .dark {
+  transition: all ease 0.4s;
   border-bottom: 4px solid var(--color-light);
 }
 .dark::before,

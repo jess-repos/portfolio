@@ -57,11 +57,10 @@ const Projects = () => {
             </SplideSlide>
           ))}
         </Splide>
-        <p className={classes.swipe}>
-          &middot; <i className='fas fa-angle-double-left'></i> &middot;
-          &middot; &middot; <i className='fas fa-angle-double-right'></i>{' '}
-          &middot;
-        </p>
+      <p className={classes.swipe}>
+        &middot; <i className='fas fa-angle-double-left'></i> &middot; &middot;
+        &middot; <i className='fas fa-angle-double-right'></i> &middot;
+      </p>
       </div>
       {isAllShowing && (
         <>

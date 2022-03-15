@@ -1,5 +1,4 @@
 import React from 'react'
-import { useUI } from '../../../contexts/UIProvider'
 import { createPortal } from 'react-dom'
 
 import NavLinks from './navlinks/NavLinks'
@@ -8,12 +7,13 @@ import DayNight from './navui/DayNight'
 import Burger from './navui/Burger'
 
 import classes from './Navbar.module.css'
-import useIsMounted from '../../../hooks/useIsMounted'
+import useIsMounted from '../../hooks/useIsMounted'
+import { useUI } from '../../contexts/UIProvider'
 
 const Navbar = () => {
-  const { darkMode } = useUI()
-
   const isMounted = useIsMounted()
+
+  const { darkMode } = useUI()
 
   if (!isMounted) return null
 

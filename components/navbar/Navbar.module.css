@@ -7,11 +7,13 @@
   height: 6rem;
   display: flex;
   justify-content: space-between;
+  transition: all ease 0.4s;
   align-items: center;
   background-color: var(--color-light);
   color: var(--color-dark-3) !important;
 }
 .dark {
+  transition: all ease 0.4s;
   background-color: var(--color-dark);
   color: var(--color-light);
 }
