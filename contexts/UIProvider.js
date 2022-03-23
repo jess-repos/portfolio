@@ -13,15 +13,15 @@ export function useUI() {
 export function UIProvider({ children }) {
   const router = useRouter()
 
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(false)
   const [navOpen, setNavOpen] = useState(false)
   const [navActive, setNavActive] = useState(null)
 
   useEffect(() => {
     const isDark = localStorage.getItem('isDark')
     if (!isDark) {
-      localStorage.setItem('isDark', true)
-      setDarkMode(true)
+      localStorage.setItem('isDark', false)
+      setDarkMode(false)
     } else {
       const value = JSON.parse(localStorage.getItem('isDark'))
       setDarkMode(value)
